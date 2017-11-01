@@ -118,7 +118,7 @@ def bloom5(dictfile, inputfile, outputfile, bitlist):
         if(bitlist[bit0] == 1 and bitlist[bit1] == 1 and bitlist[bit2] == 1 and bitlist[bit3] == 1 and bitlist[bit4] == 1):
             returnlist.append('maybe\n')
             print(line + ' maybe\n\n')
-        if(bitlist[bit0] == 0 or bitlist[bit1] == 0 or bitlist[bit2] == 0 and bitlist[bit3] == 1 and bitlist[bit4] == 1):
+        if(bitlist[bit0] == 0 or bitlist[bit1] == 0 or bitlist[bit2] == 0 or bitlist[bit3] == 0 or bitlist[bit4] == 0):
             returnlist.append('no\n')
             print(line + ' not in list\n\n')
 
