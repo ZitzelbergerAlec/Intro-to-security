@@ -1,4 +1,6 @@
 run in the windows command prompt with: python Assignment1.py dictionary.txt sample_input.txt output3.txt output5.txt
+It accepts the .txts as arguments.
+You will need your Python path to be set correctly in your environment variables.
 
 Questions:
 a) I used the sha family of hash functions for this assignment. I used them because 
@@ -30,5 +32,9 @@ filter. This is because it could just happen that hashing unmatching dictionary 
  P = (1 - e^(-5 * 623518/1000000))^5 = 79.7% false positive rate
  and where k = 3 
   P = (1 - e^(-3 * 623518/1000000))^3 = 60.5% false positive rate
+  
+d) If we wanted to improve reduce the rate of false positives, then we simply increase the number of total bits in the
+array. The higher N we have, the less likely that a false positive becomes. Alternatively, we can also decrease the size
+of the dictionary.
  
 sha1 has an output range of 160
