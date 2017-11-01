@@ -115,7 +115,7 @@ def bloom5(dictfile, inputfile, outputfile, bitlist):
         bit3 = int(hash_browns3, 16) % list_size
         bit4 = int(hash_browns4, 16) % list_size
         
-        if(bitlist[bit0] == 1 and bitlist[bit1] == 1 and bitlist[bit2] == 1 and bitlist[bit3] == 1and bitlist[bit4] == 1):
+        if(bitlist[bit0] == 1 and bitlist[bit1] == 1 and bitlist[bit2] == 1 and bitlist[bit3] == 1 and bitlist[bit4] == 1):
             returnlist.append('maybe\n')
             print(line + ' maybe\n\n')
         if(bitlist[bit0] == 0 or bitlist[bit1] == 0 or bitlist[bit2] == 0 and bitlist[bit3] == 1 and bitlist[bit4] == 1):
